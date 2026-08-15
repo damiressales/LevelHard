@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>HISTÓRIA</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Site de um jogo de plataforma 2d (Level Hard)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styleH.css" />
+    <link rel="icon" href="imgs/logo.png">
+    <style>
+        header{
+            height: 70px;
+            .logo{
+                height: 50px;
+                margin-top: 10px;
+            }
+            .titulo{
+                margin-top: 22px;
+            }
+        }
+
+        .card-jogo{
+            display: inline-block;
+        }
+        
+        .btn-jogar{
+            position: absolute;
+            top: 70%;
+            left: 40%;
+            transform: translate(-50% -50%);
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: navajowhite;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 315px;
+            margin-left: 80px;
+        }
+
+@media (max-width: 480px) {
+    .historia{
+        h1{
+            margin-top: -10px;
+            font-size: 37px;
+        }
+    }
+    .card-jogo{
+    display: inline-block;
+    }
+    .btn-jogar{
+        position: absolute;
+        top: 35%;
+        left: 11%;
+    }
+}
+
+    </style>
+  </head>
+
+<body>
+    <header>
+        <img src="imgs/logo.png" alt="Level Hard" title="Level Hard" class="logo">
+        <span class="titulo">LEVEL HARD</span>
+    </header>
+
+     <main>
+        <section class="historia">
+          <h1>✅ Missão cumprida!</h1>
+          <p class="frase">O jogo agora é seu. Divirta-se no LEVEL HARD</p>
+          <div class="card-jogo">
+            <img class="imghistoria" src="imgs/jogo.png" alt="Capa do jogo Level Hard" title="Capa do jogo Level Hard">
+            <button class="btn-jogar">
+            <a href="jogo/index.html" target="_blank"> Jogar Agora</a>
+            </button>
+          </div>
+        </section>
+    </main>
+</body>
+</html>

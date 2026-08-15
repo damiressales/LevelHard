@@ -1,0 +1,483 @@
+body{
+    background-color:rgba(118, 187, 239, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+body { background-color: rgba(118, 187, 239, 0.5); color: black; transition: 0.3s; }
+header { background-color: #ffffff; }
+
+body.dark-mode { background-color: rgb(40, 40, 40); color: rgb(0, 0, 0); }
+body.dark-mode header { background-color: #1a1a1a; }
+body.dark-mode button { background-color: #444; color: white; }
+
+nav{
+    ul{
+        margin-right: 150px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 25px;
+            margin-left: 10px;
+            color: white;
+             a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #443e3e;
+                transition: all 0.5s;
+             }
+            a:hover{
+                color: rgba(5, 92, 164, 0.5);
+            }
+            .compra{
+                border: 1px solid rgb(54, 147, 209);
+                background: rgb(54, 147, 209);
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+            }
+        }  
+    }
+}
+
+body.dark-tema {
+background-color: #000000;
+color: #f5f5f5;
+}
+.dark-header {
+background-color: #000;
+color: #fff;
+}
+
+.tema {
+position: fixed;
+top: 20px;
+left: -720px;
+cursor: pointer;
+font-size: 24px;
+}
+
+body {
+background-color: rgba(118, 187, 239, 0.5);
+color: #000;
+}
+
+header {
+background-color: #fff;
+color: #000;
+}
+
+.cardpreco{
+    background-color: #fff;
+    color: #000; 
+}
+
+body.dark-tema .tituloP,
+body.dark-tema .descricao,
+body.dark-tema .ava,
+body.dark-tema .segundoh2,
+body.dark-tema .caracteristica,
+body.dark-tema nav a.inicio,
+body.dark-tema nav a.historia,
+body.dark-tema nav a.contato{
+    color: #ffffff;
+}
+
+body.dark-tema h2,
+body.dark-tema .h2card2,
+body.dark-tema .h2Fisica,
+body.dark-tema p,
+body.dark-tema .pgrid2,
+body.dark-tema .nomes,
+body.dark-tema .rodape,
+body.dark-tema .rodape2,
+body.dark-tema .rodape3{
+    color: black;
+}
+
+
+main{
+    .imgcapa{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.1;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+    .tituloP{
+        text-align: center;
+        margin-top: 140px;
+        font-size: 80px;
+        color: black;
+    }
+    .descricao{
+        text-align: center;
+        color: #443e3e;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .avaliacao{
+        margin-top: 50px;
+        color: black;
+        .estrela{
+            width: 120px;
+        }
+        .ava{
+            font-size: 20px;
+        }
+    }
+    .container{
+        text-align: center;
+    }
+    .cardpreco{
+        background: white;
+        padding: 10px;
+        width: 350px;
+        height: 150px;
+        font-size: 30px;
+        margin: 0 auto 20px;
+        margin-top: 50px;
+    }
+        .preco-antigo{
+            text-decoration: line-through;
+            color: gray;
+            font-size: 15px;
+            margin-right: 80px;
+            margin-top: 15px;
+        }
+        .linha-preco{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 12px;
+            font-size: 35px;
+        .desconto{
+            color: white;
+            font-weight: 700;
+            background: red;
+            border: 2px solid red;
+            padding: 4px;
+            font-size: 25px;
+            }
+        }
+        .tempo{
+            font-size: 15px;
+            color:dimgray;
+            margin-top: 15px;
+        
+        }
+        .comprar{
+            border: 1px solid rgb(54, 147, 209);
+            background: rgb(54, 147, 209);
+            height: 52px;
+            width: 160px;
+            margin-right: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            a{
+                text-decoration: none;
+                transition: all 0.5;
+            }
+            a:hover{
+                color: white;
+            }
+        }
+        .historia{
+            border: 2px solid rgb(53, 142, 214);
+            background: white;
+            padding: 16px;
+            color: rgb(53, 142, 214);
+            font-size: 15px;
+            font-weight: 700;
+            a{
+            text-decoration: none;
+            color: black;
+            }
+            a:hover{
+                color: rgb(53, 142, 214);
+            }
+            
+        }
+        i{
+            margin-top: 60px;
+            margin-left: 737px;
+            font-size: 30px;
+        }
+        .caracteristica{
+            text-align: center;
+            margin-top: 80px;
+            font-size: 45px;
+        }
+.grid{
+    display: grid;
+    padding: 100px;
+    grid-template-columns: 50% 50%;
+        .coluna{
+            margin: 10px;   
+            .card{
+                background: white;
+                height: 120px;
+                margin: auto;
+                h2, .h2card2, .h2Fisica{
+                    padding: 20px 0px 10px 30px;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 17px;
+                    padding: 10px;
+                    color: #443e3e;
+                    margin-left: 20px;
+                }
+            }
+    
+        }    
+    }
+        .segundoh2{
+            text-align: center;
+            padding: 0px 0px 10px;
+            font-size: 40px;
+        }
+        .estrela2{
+            width: 120px;
+            margin-left: 550px;
+
+        }
+        .grid2{
+            display: flex;
+            grid-template-columns: repeat(3, 33%);
+            margin-top: 10px;
+            justify-content: center;
+        .coluna2{
+            .card2{
+                background: white;
+                margin: 10px;
+                height: 170px;
+                .estrela3{
+                    width: 120px;
+                    padding: 15px;
+                }
+                .pgrid2{
+                    font-size: 15px;
+                    padding: 0px 20px;
+                }
+                .nomes{
+                    font-weight: bold;
+                    padding: 20px 0px 7px;
+                    margin-left: 20px;
+                }
+                .verif{
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: gray;
+                }
+            }
+        }
+    }
+} 
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+    .grid3{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        margin-top: 80px;
+        .coluna3{
+            margin: 25px;
+            text-align: center;
+            .card3{
+                .icone{
+                    width: 100%px;
+                    height: 60px;
+                }
+                .rodape{
+                    font-weight: bold;
+                    padding: 10px;
+                }
+                .rodape2{
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+     .rodape3{
+        text-align: center;
+        color: rgb(54, 52, 52);
+        padding: 30px;
+    }
+}
+.menu{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.titulo{
+    display: none;
+}
+#btn-tema{
+    display: block;
+}
+
+@media (max-width: 480px){
+    .imgcapa{
+        display: none;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    .fa-solid fa-angle-down{
+        display: none;
+    }
+
+    .estrela2{
+        display: none;
+    }
+
+    .tema{
+        top: 50px;
+    }
+
+    header nav ul{
+        margin: 0px;
+    }
+
+    header nav {
+        width: 100%;
+        float: right;
+        margin-top: 20px;
+        background-color: #FFF;
+        display: none;
+    }
+
+    header{
+        height: 100px;
+        padding: 0px;
+        width: 430px;
+        display: block;
+        background-color: white;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+
+    header img{
+        height: 50px;
+        margin-top: 25px;
+        float: left;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .titulo{
+        display: block;
+        text-decoration: none;
+        float: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu{
+        display: block;
+        border: 1px solid rgba(5, 92, 164, 0.5);
+        padding: 10px 15px;
+        color: black;
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    main .grid{
+        grid-template-columns: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    main{
+        width: 100%;
+            .caracteristica{
+                margin: 70px 0px 70px 0px;
+            }
+            .segundoh2{
+                margin: 70px 0px 70px 0px;
+            }
+            .avaliacao{
+                margin-top: 40px;
+            }
+            .card-preco{
+                margin-top: 40px;
+            }
+            h1{
+                font-size: 70px;
+            }
+            .descricao{
+                font-size: 21px;
+            }
+    .grid{
+        .coluna{
+            .card{
+                height: 160px;
+            h2{
+                padding: 30px 97px 0px 0px;
+            }
+            .h2card2{
+                padding: 30px 155px 0px 0px
+            }
+            .h2Fisica{
+                padding: 30px 146px 0px 0px
+            }
+            p{
+                padding: 28px 10px 30px 8px;
+            }
+        }
+    }
+}
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        .coluna2{
+            .card2{
+                .nomes{
+                    padding: 15px 0px 15px;
+                }  
+            }
+        }
+    }
+}
+
+    footer{
+        height: 600px;
+        .grid3{
+            grid: none;
+        }
+    }
+}

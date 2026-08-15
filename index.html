@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Level Hard</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de um jogo de plataforma 2d (Level Hard)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="imgs/logo.png">
+</head>
+<body id="corpoDaPagina">
+        <header id="mainHeader">
+            <a href="index.html" title="Home">
+                <img src="imgs/logo.png" alt="Level Hard" title="Level Hard">
+                <span class="titulo">LEVEL HARD</span>
+            </a>
+
+            <a href="javascript: mostrarmenu()" class="menu">
+                <i class="fas fa-bars"></i>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a class="inicio" href="./index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a class="historia" href="./historia.html">HISTÓRIA</a>
+                    </li>
+                    <li>
+                        <a class="contato" href="./contato.html">CONTATO</a>
+                    </li>
+                    <li>
+                        <a class="compra" href="./comprar.html">COMPRAR</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <div class="tema">
+        <i id="iconetema" class="fa-solid fa-toggle-off"></i>
+        </div>
+
+        <script>
+        const iconetema = document.getElementById("iconetema");
+        const header = document.getElementById("mainHeader");
+
+        iconetema.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark-tema");
+            header.classList.toggle("dark-header");
+            iconetema.classList.toggle("fa-toggle-off");
+            iconetema.classList.toggle("fa-toggle-on");
+        });
+        </script>
+        
+        <h1 class="tituloP">LEVEL HARD</h1>
+        <p class="descricao">Um jogo de plataforma simples, mas brutalmente difícil. Pule, corra e sobreviva pelos<br> níveis mais desafiadores.</p>
+        <img class="imgcapa" src="imgs/jogo.png"  alt="Capa do jogo" title="Capa do jogo">
+            <div class="container">
+                <div class="avaliacao">
+                    <img class="estrela" src="imgs/estrelas.png">
+                    <span class="ava">(4.8/5 - 2.847 avaliações) | +5.000 jogadores</span>
+                </div>
+
+                <div class="cardpreco">
+                    <p class="preco-antigo">R$ 49,90</p>
+
+                    <div class="linha-preco">
+                        <h2>R$ 29,90</h2>
+                        <span class="desconto">- 40%</span>
+                    </div>
+                    <p class="tempo">Oferta válida por tempo limitado</p>
+                </div>
+                <div class="botoes">
+                    <button class="comprar"> <a href=./cadastro.html>Comprar Agora</a> </button>
+                    <button class="historia"> <a href="./historia.html">Conheça a História</a></button>
+                </div>
+            </div>
+
+            <h2 class="caracteristica">Características</h2>
+            <div class="grid">
+                <div class="coluna">
+                    <div class="card">
+                        <h2>Design Minimalista</h2>
+                        <p>Visual simples e limpo para focar no que importa: a jogabilidade.</p>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="card">
+                        <h2>Controles Precisos</h2>
+                        <p>Pulos e correr nunca foi tão responsivo. Cada morte é culpa sua.</p>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="card">
+                        <h2 class="h2card2" >Níveis Brutais</h2>
+                        <p>Fases feitas para testar sua paciência e habilidade.</p>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="card">
+                        <h2 class="h2Fisica" >Física Simples</h2>
+                        <p>Sem complicações. Apenas para você, plataformas e obstáculos mortais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="segundoh2">O Que Dizem Os Jogadores</h2>
+            <img class="estrela2" src="imgs/estrelas.png">
+            <span class="ava">4.8/5 baseado em 2.847 avaliações</span>
+                <div class="grid2">
+                    <div class="coluna2">
+                        <div class="card2">
+                            <img class="estrela3" src="imgs/estrelas.png">
+                            <p class="pgrid2">"Viciante! Não consigo parar de jogar. Cada nível é um desafio único."</p>
+                            <p class="nomes">Pedro Silva</p>
+                            <p class="verif">Comprador Verificado</p>
+                        </div>
+                    </div>
+
+                    <div class="coluna2">
+                        <div class="card2">
+                            <img class="estrela3" src="imgs/estrelas.png">
+                            <p class="pgrid2">"Design minimalista perfeito. Difícil na medida certa, sem ser injusto."</p>
+                            <p class="nomes">Maria Santos</p>
+                            <p class="verif">Comprador Verificado</p>
+                        </div>
+                    </div>
+
+                    <div class="coluna2">
+                        <div class="card2">
+                            <img class="estrela3" src="imgs/estrelas.png">
+                            <p class="pgrid2">"Melhor jogo de plataforma que joguei em anos. Vale cada centavo!"</p>
+                            <p class="nomes">João Costa</p>
+                            <p class="verif">Comprador Verificado</p>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <script>
+        const ANO_LANCAMENTO = 2026;
+        let anoAtual = new Date().getFullYear();
+
+        if (anoAtual == ANO_LANCAMENTO) {
+            alert("🎮 Pare de jogar o básico. O LEVEL HARD chegou para testar seus limites.");
+        }
+
+        let nomeVisitante = prompt("Bem-vindo ao site do LEVEL HARD! Digite seu nome e prepare-se para o desafio.");
+        let idadeVisitante = Number(prompt("Olá, " + nomeVisitante + ", Seja Bem-Vindo! Qual a sua idade?"));
+
+        const body = document.getElementById("corpoDaPagina")
+
+
+        if (idadeVisitante >= 18) {
+            alert("Parabéns, " + nomeVisitante + "! Você tem permissão total para vizualizar o conteúdo.");
+            document.getElementById("corpodaPagina").style.filter = "none";
+        } else {
+            alert(" Acesso limitado. " + nomeVisitante + " Por diretrizes de segurança para a sua idade, ocultamos parte do conteúdo visual.");
+            document.getElementById("corpoDaPagina").style.filter = "blur(20px)";
+        }
+    </script>
+
+    <footer>
+        <div class="grid3">
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/seguranca.png">
+                    <p class="rodape" >Compra Segura</p>
+                    <p class="rodape2" >Pagamento protegido com criptografia SSL</p>
+                </div>
+            </div>
+
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/download.png">
+                    <p class="rodape" >Download Instantâneo</p>
+                    <p class="rodape2" >Acesso imediato após a compra</p>
+                </div>
+            </div>
+
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/cartao.png">
+                    <p class="rodape" >Garantia de 7 Dias</p>
+                    <p class="rodape2" >Não gostou? Devolvemos o seu dinheiro</p>
+                </div>
+            </div>
+        </div>
+        <p class="rodape3" >Desenvolvido por Damires Sales</p>
+    </footer>
+
+    <script>
+        function mostrarmenu(){
+            document.querySelector("header nav").classList.toggle("mostrar")
+        }
+    </script>
+
+    
+</body>
+
+<script>
+    
+</script> 
+</html>

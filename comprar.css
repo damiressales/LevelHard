@@ -1,0 +1,494 @@
+body{
+    background-color: rgba(118, 187, 239, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+nav{
+    ul{
+        margin-right: 150px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 25px;
+            margin-left: 10px;
+            color: white;
+             a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #443e3e;
+                transition: all 0.5s;
+             }
+            a:hover{
+                color: rgba(5, 92, 164, 0.5);
+            }
+            .compra{
+                border: 1px solid rgb(54, 147, 209);
+                background: rgb(54, 147, 209);
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+                transition: all 0.5s;
+            }
+            .compra:hover{
+                color: black;
+            }
+        }  
+    }
+}
+main{
+    h1{
+        text-align: center;
+        margin-top: 140px;
+        font-size: 60px;
+        color: black;
+    }
+    p{
+        text-align: center;
+        color: #443e3e;
+        margin-top: 5px;
+        font-size: 17px;
+        color: gray;
+    }
+}
+.grid{
+    grid-template-columns: 70%;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 220px;
+    .coluna{
+        .card1{
+            display: inline-block;
+            background-color: white;
+            height: 285px;
+            padding: 30px;
+            margin-top: 60px;
+                .mensagem{
+                    font-weight: bold;
+                }
+            h2{
+                color: black;
+                margin-bottom: 30px;
+            }
+        }
+        .card2{
+            display: inline-block;
+            background-color: white;
+            height: 530px;
+            padding: 30px;
+            margin-top: 15px;
+                .mensagem{
+                    font-weight: bold;
+                }
+            h2{
+                color: black;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+        input, textarea{
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            background-color: #2f7aeb;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(36, 143, 231, 0.5);
+        }
+        select{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        .formulario:focus{
+            background-color: rgba(118, 187, 239, 0.5);
+        }
+    }
+
+.grid2{
+    float: right;
+    display: grid;
+    grid-template-columns: 30%;
+        .coluna2{
+            .resumocompra{
+                background: white;
+                width: 380px;
+                padding: 30px;
+                margin-top: -950px;
+                margin-right: 175px;
+                height: 890px;
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    color: #443e3e;
+                }
+
+                .cardcompra{
+                    display: grid;
+                    grid-template-columns: 80px 1fr;
+                    grid-template-areas: "img nome" "img tipo" "img estrela";
+                }
+
+                .carrinho{
+                    grid-area: img;
+                    width: 80px;
+                    background-color: #add8e6;
+                }
+
+                .nome{
+                    grid-area: nome;
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin-left: 10px;
+                }
+
+                .tipo{
+                    grid-area: tipo;
+                    color: #443e3e;
+                    margin-left: 10px;
+                }
+
+                .estrela{
+                    grid-area: estrela;
+                    width: 80px;
+                    margin-top: 5px;                
+                }
+
+                .subtotal, .desconto, .total{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+                    font-size: 16px;
+                    margin-top: 12px;
+                }
+
+                .preco{
+                    text-decoration: line-through;
+                    color: #999;
+                }
+
+                .desconto{
+                    color: #2e7d32;
+                    font-weight: bold;
+                }
+
+                .total{
+                    border-top: 1px solid #eee;
+                    padding-top: 15px;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+
+                .beneficios{
+                    list-style: none;
+                    padding: 0;
+                    margin: 25px 0;
+                }
+
+                .beneficios li{
+                    font-size: 14px;
+                    color: #555;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .btn-finalizar{
+                    width: 100%;
+                    background-color: #5ea4c1;
+                    color: white;
+                    border: none;
+                    padding: 16px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: color 0.3s;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                .btnfinalizar:hover{
+                    background-color: #4a8ca8;
+                }
+
+                .info-segura{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    color: #888;
+                    margin-top: 20px;
+                }
+
+                .btn-voltartelainicial{
+                    display: block;
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #5ea4c1;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                .btn-voltartelainicial:hover{
+                    color: rgb(1, 46, 83);
+                }
+        }
+    }
+}
+
+.metodospagamento{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.cartao-metodo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    background-color: #fcfcfc;
+    transition: all 0.2s ease-in-out;
+}
+
+.cartao-metodo:hover{
+    background-color: rgba(105, 182, 234, 0.563);
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo strong{
+    font-size: 15px;
+    color: #333
+}
+.conteudo span{
+    font-size: 12px;
+    color: #666;
+}
+
+input[type="radio"]:checked + .cartao-metodo {
+    border-color: #2c3e50;
+    transition: background 0.3s;
+}
+.cartao-metodo:hover{
+    border-color: #b0b0b0;
+    background: rgba(105, 182, 234, 0.563);;
+}
+
+.bandeiras{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.informacoes-jogo{
+    float: right;
+    margin-right: 300px;
+    margin-top: -120px;
+}
+.informacoes strong {
+  color: #003366;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    .grid3{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        margin-top: 80px;
+        .coluna3{
+            margin: 25px;
+            text-align: center;
+            .card3{
+                .icone{
+                    width: 100%px;
+                    height: 60px;
+                }
+                .rodape{
+                    font-weight: bold;
+                    padding: 10px;
+                }
+                .rodape2{
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+     .rodape3{
+        text-align: center;
+        color: rgb(54, 52, 52);
+        padding: 30px;
+    }
+}
+
+.menu{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.titulo{
+    display: none;
+}
+
+@media (max-width: 480px){
+    body{
+        text-align: center;
+    }
+    header nav ul{
+        margin: 0px;
+    }
+
+    header nav {
+        width: 100%;
+        float: right;
+        margin-top: 20px;
+        background-color: #FFF;
+        display: none;
+    }
+
+    header{
+        height: 100px;
+        padding: 0px;
+        width: 430px;
+        display: block;
+        background-color: white;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+
+    header img{
+        height: 50px;
+        margin-top: 25px;
+        float: left;
+        margin-left: 40px;
+    }
+
+    .titulo{
+        display: block;
+        text-decoration: none;
+        float: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu{
+        display: block;
+        border: 1px solid rgba(5, 92, 164, 0.5);
+        padding: 10px 15px;
+        color: black;
+        float: right;
+        margin-top: 30px;
+        margin-right: 65px;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+        .coluna{
+            .card1{
+                width: 75%;
+                margin-top: 48px;
+                height: 302px;
+            }
+            form{
+                width: 100%;
+                .nome{
+                    margin-right: 177px;
+                }
+                .email{
+                    margin-right: 270px;
+                }
+                .cpf{
+                    margin-right: 290px;
+                }
+            }
+
+            .card2{
+                width: 75%;
+                height: 600px;
+                margin-bottom: 15px;
+            }
+            .cartao{
+                margin-right: 180px;
+            }
+            .nomeC{
+                margin-right: 193px;
+            }
+            .validade{
+                margin-right: 250px;
+            }
+            .cvv{
+                margin-right: 290px;
+            }
+            .parcela{
+                margin-right: 215px;
+            }
+        }
+}
+
+.grid2{
+    .coluna2{
+        margin-left: 19px;
+        .resumocompra{
+            width: 298%;
+            margin-right: 5px;
+            margin-top: 3px;
+            height: 860px;
+        }
+    }
+}
+
+.informacoes-jogo{
+    margin-right: 110px;
+    margin-top: -135px;
+}
+
+    footer{
+        height: 600px;
+        margin-top: 995px;
+            .grid3{
+                grid: none;
+            }
+        }
+}

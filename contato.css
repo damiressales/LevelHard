@@ -1,0 +1,373 @@
+
+body{
+    background-color: rgba(118, 187, 239, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+nav{
+    ul{
+        margin-right: 150px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 25px;
+            margin-left: 10px;
+            color: white;
+             a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #443e3e;
+                transition: all 0.5s;
+             }
+            a:hover{
+                color: rgba(5, 92, 164, 0.5);
+            }
+            .compra{
+                border: 1px solid rgb(54, 147, 209);
+                background: rgb(54, 147, 209);
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+            }
+        }  
+    }
+}
+
+main{
+    h1{
+        text-align: center;
+        font-size: 60px;
+        color: black;
+        margin-top: 140px;
+    }
+    .inicio{
+        text-align: center;
+        color: #443e3e;
+        font-size: 20px;
+    }
+}
+
+.grid{
+    grid-template-columns: 50% 40%;
+    display: grid;
+    margin-top: 80px;
+        .coluna{
+            .card1{
+                background-color: white;
+                width: 100%;
+                height: 550px;
+                padding: 30px;
+                margin: 0px 0px 100px 135px;
+            h2{
+                color: black;
+                margin: 30px;
+            }
+        }
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+        input, textarea{
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            background-color: #2f7aeb;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(36, 143, 231, 0.5);
+        }
+        select{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        .formulario:focus{
+            background-color: rgba(118, 187, 239, 0.5);
+        }
+    }
+
+.card2{
+    background-color: white;
+    height: 250px;
+    width: 50%;
+    padding: 30px;
+    float: right;
+        h2{
+            color: black;
+            margin-bottom: 30px;
+        }
+        .email{
+            margin-right: 192px;
+            float: right;
+            font-weight: bold;
+        }
+        .telefone{
+            margin-right: 170px;
+            float: right;
+            font-weight: bold;
+        }
+        .horario{
+            margin-right: 178px;
+            float: right;
+            font-weight: bold;
+        }
+        .iconenvelope, .icontelefone, .iconhorario{
+            width: 14%;
+            height: 38px;
+        }
+        span{
+            margin-right: 1px;
+            float: right;
+        }
+    }
+
+.grid2{
+    display: grid;
+    grid-template-columns: 30%;
+    float: right;
+        .cardcontato1{
+        background-color: white;
+        padding: 20px;
+        width: 370px;
+        height: 220px;
+        margin-bottom: 20px;
+        margin-top: -710px;
+        margin-right: 130px;
+        .titulo1{
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: black;
+        }
+        .informacao{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+        .imgenvelope, .imgtelefone, .imghorario{
+            width: 40px;
+            display: flex;
+        }
+        .informacao strong{
+            font-size: 16px;
+            color: black;
+        }
+        .informacao span{
+            color: #443e3e;
+            font-size: 14px;
+        }
+    }
+    .cardcontato2{
+        background-color: white;
+        padding: 20px;
+        width: 370px;
+        margin-bottom: 20px;
+        margin-top: -428px;
+        height: 288px;
+        .perguntas{
+            margin-bottom: 18px;
+        }
+        .perguntas strong{
+            display: block;
+            font-size: 15px;
+            color: black;
+            margin-bottom: 4px;
+            margin-top: 10px;
+        }
+        .perguntas{
+            border-top: 1px solid #e8e0e0;
+        }
+        .perguntas p{
+            margin: 0;
+            font-size: 14px;
+            color: #443e3e;
+        }
+        .titulo2{
+            margin-top: 0;
+            margin-bottom: 22px;
+            color: black;
+        }
+    }
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+        .grid3{
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            margin-top: 80px;
+                .coluna3{
+                    margin: 25px;
+                    text-align: center;
+                .card3{
+                    .icone{
+                        width: 100%px;
+                        height: 60px;
+                    }
+                    .rodape{
+                        font-weight: bold;
+                        padding: 10px;
+                    }
+                    .rodape2{
+                        color: gray;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+     .rodape3{
+        text-align: center;
+        color: rgb(54, 52, 52);
+        padding: 30px;
+    }
+}
+
+.menu{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.titulo{
+    display: none;
+}
+
+@media (max-width: 480px){
+        body{
+        text-align: center;
+    }
+
+    header nav ul{
+        margin: 0px;
+    }
+
+    header nav {
+        width: 100%;
+        float: right;
+        margin-top: 20px;
+        background-color: #FFF;
+        display: none;
+
+    }
+
+    header{
+        height: 100px;
+        padding: 0px;
+        width: 430px;
+        display: block;
+        background-color: white;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+
+    header img{
+        height: 50px;
+        margin-top: 25px;
+        float: left;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .titulo{
+        display: block;
+        text-decoration: none;
+        float: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu{
+        display: block;
+        border: 1px solid rgba(5, 92, 164, 0.5);
+        padding: 10px 15px;
+        color: black;
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    main{
+        h1{
+            margin-top: 165px;
+        }
+        .inicio{
+            margin-top: 40px;
+        }
+    }
+
+.grid{
+    .coluna{
+        .card1{
+            margin: 0px 20px 30px 20px;
+            width: 150%;
+            display: inline-block;
+        }
+        form{
+            margin-left: 0;
+            .nome{
+                margin-right: 250px;
+            }
+            .email{
+                margin-right: 260px;
+            }
+            .assunto{
+                margin-right: 230px;
+            }
+            .mensagem{
+                margin-right: 210px;
+            }
+        }
+    }
+}
+
+    .grid2{
+        .cardcontato1{
+            margin-top: 0;
+            width: 262%;
+            margin-right: 115px;
+        }
+        .cardcontato2{
+            width: 262%;
+            margin-top: 0;
+        }
+    }
+
+    footer{
+        height: 600px;
+        margin-top: 680px;
+            .grid3{
+                grid: none;
+            }
+        }
+}

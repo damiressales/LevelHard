@@ -1,0 +1,293 @@
+body{
+    background-color: rgba(118, 187, 239, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 100px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+nav{
+    ul{
+        margin-right: 150px;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 25px;
+            margin-left: 10px;
+            color: white;
+             a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #443e3e;
+                transition: all 0.5s;
+             }
+            a:hover{
+                color: rgba(5, 92, 164, 0.5);
+            }
+            .compra{
+                border: 1px solid rgb(54, 147, 209);
+                background: rgb(54, 147, 209);
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+            }
+        }  
+    }
+}
+.historia{
+    h1{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 60px;
+        color: black;
+    }
+    .frase{
+        text-align: center;
+        color: #443e3e;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .imghistoria{
+        margin: auto;
+        margin-top: 60px;
+        background-position: center;
+        width: 100%;
+    }
+}
+main{
+    width: 1200px;
+    margin: 150px auto; 
+    .center {
+        text-align: center;
+    }
+.grid{
+    display: inline-grid;
+    grid-template-columns: 50% 50%; 
+        .coluna, .colunaparte2{
+            margin: 20px;
+        .card1{
+            background: rgb(226, 230, 233);
+            margin-top: 50px;
+            height: 309px;
+
+            .mundo{
+                padding: 20px 20px 10px 80px;
+                font-size: 30px;
+            }
+            .texto1{
+                color: #443e3e;
+                font-size: 20px;
+                margin: 15px 30px 30px 30px;
+            }
+            .texto2{
+                color: #443e3e;
+                font-size: 20px;
+                margin: 10px 30px 30px 30px;
+            }
+        }    
+            .card2, .cardparte2{
+                margin-top: 50px;
+                height: 300px;
+            }
+            .img1, .imgparte2{
+                width: 101%;
+                height: 103%;
+
+            }         
+        }
+    
+    }
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+    .grid3{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        margin-top: 80px;
+        .coluna3{
+            margin: 25px;
+            text-align: center;
+            .card3{
+                .icone{
+                    width: 100%px;
+                    height: 60px;
+                }
+                .rodape{
+                    font-weight: bold;
+                    padding: 10px;
+                }
+                .rodape2{
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+     .rodape3{
+        text-align: center;
+        color: rgb(54, 52, 52);
+        padding: 30px;
+    }
+}
+
+.menu{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.titulo{
+    display: none;
+}
+.colunaresponsivo{
+    display: none;
+    .cardresponsivo{
+        display: none;
+        .imgresponsivo{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        text-align: center;
+    }
+
+    header nav ul{
+        margin: 0px;
+    }
+
+    header nav {
+        width: 100%;
+        float: right;
+        margin-top: 20px;
+        background-color: #FFF;
+        display: none;
+    }
+
+    header{
+        height: 100px;
+        padding: 0px;
+        width: 430px;
+        display: block;
+        background-color: white;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+
+    header img{
+        height: 50px;
+        margin-top: 25px;
+        float: left;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .titulo{
+        display: block;
+        text-decoration: none;
+        float: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .menu{
+        display: block;
+        border: 1px solid rgba(5, 92, 164, 0.5);
+        padding: 10px 15px;
+        color: black;
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    main{
+        width: 100%;
+        .grid{
+            display: grid;
+            grid-template-columns: 100%;
+            .coluna{
+                .card1{
+                    height: 390px;
+                    margin-top: 70px;
+                    .mundo{
+                        padding: 30px 1px 15px 0px;
+                    }
+                    .texto1{
+                        margin: 9px 30px 25px 30px;
+                    }
+                    .texto2{
+                        margin: 5px 30px 30px 30px;
+                    }
+                }
+                    .img1, .imgparte2 {
+                        width: 100%;
+                        height: 103%;
+                        margin-top: 5px;
+                    }
+        }
+    }
+}
+    
+    .historia{
+        h1{
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        .imghistoria{
+            margin: 50px 0px 50px 0px;
+        }
+    }
+
+    .colunaresponsivo{
+        display: block;
+            .cardresponsivo{
+                margin-top: 50px;
+                height: 300px;
+                display: block;
+                    .imgresponsivo{
+                        display: block;
+                        width: 90%;
+                        height: 101%;
+                        margin: auto;
+                    }
+            }
+    }
+
+    .colunaparte2{
+        display: none;
+        .cardparte2{
+            display: none;
+            .imgparte2{
+                display: none;
+            }
+        }
+    }
+
+    footer{
+        height: 600px;
+        .grid3{
+            grid: none;
+        }
+    }
+}

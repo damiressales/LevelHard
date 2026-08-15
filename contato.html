@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>CONTATO</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site de um jogo de plataforma 2d (Level Hard)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="contato.css">
+    <link rel="icon" href="imgs/logo.png">
+</head>
+<body id="corpoDaPagina">
+    <header>
+        <a href="index.html" title="Home">
+            <img src="imgs/logo.png" alt="Level Hard" title="Level Hard">
+            <span class="titulo">LEVEL HARD</span>
+        </a>
+        <a href="javascript: mostrarmenu()" class="menu">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">INÍCIO</a>
+                </li>
+                <li>
+                    <a href="./historia.html">HISTÓRIA</a>
+                </li>
+                <li>
+                    <a href="./contato.html">CONTATO</a>
+                </li>
+                <li>
+                   <a class="compra" href="./comprar.html">COMPRAR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>FALE CONOSCO</h1>
+        <p class="inicio" >Estamos aqui para ajudar. Entre em contato e responderemos o mais rápido possível.</p>
+            <div class="grid">
+                <div class="coluna">
+                    <div class="card1">
+                        <h2 class="mensagem">Envie sua Mensagem</h2>
+                    <form name="form-contato" method="post" action="#"> 
+                        <label class="nome" for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required autocomplete="off" class="formulario">
+
+                
+                        <label class="email" for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="seu@gmail.com" required autocomplete="off" inputmode="email" class="formulario">
+
+                        <label class="assunto" for="assunto">Assunto:</label>
+                        <select name="assunto" class="formulario" required>
+                            <option value="">Selecione uma Opção</option>
+                            <option value="Suporte Técnico">Suporte Técnico</option>
+                            <option value="Dúvidas sobre Compra">Dúvidas sobre Compra</option>
+                            <option value="Reembolso">Reembolso</option>
+                            <option value="Reportar Bug">Reportar Bug</option>
+                            <option value="Parceria/Negócios">Parceria/Negócios</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                        <label class="mensagem" for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required autocomplete="off" class="formulario"></textarea>
+
+                        <button class="botao" type="submit">Enviar</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+        <div class="grid2">
+            <div class="cardcontato1">
+                <h3 class="titulo1" >Informação</h3>
+
+                <div class="informacao">
+                    <div> <img class="imgenvelope" src="imgs/envelope.jpeg"> </div>
+                    <div>
+                        <strong>Email</strong> <br>
+                        <span>contato@levelhard.com</span>
+                    </div>
+                </div>
+
+                <div class="informacao">
+                    <div> <img class="imgtelefone" src="imgs/telefone.jpeg"> </div>
+                    <div>
+                        <strong>Telefone</strong> <br>
+                        <span>(44) 9 1234-4321</span>
+  
+                    </div>
+                </div>
+
+                <div class="informacao">
+                    <div> <img class="imghorario" src="imgs/relogio.jpeg"> </div>
+                    <div>
+                        <strong>Horário</strong> <br>
+                        <span>Seg - Sex: 9h - 18h</span> <br>
+                        <span>Sáb: 9h - 14h</span>
+                    </div>
+                </div>
+            </div>
+
+                <div class="cardcontato2">
+                    <h3 class="titulo2" >Perguntas Rápidas</h3>
+
+                    <div class="perguntas">
+                        <strong>Tempo de resposta?</strong>
+                        <p>Até 24 horas úteis</p>
+                    </div>
+
+                    <div class="perguntas">
+                        <strong>Suporte técnico?</strong>
+                        <p>Disponível 7 dias por semana</p>
+                    </div>
+
+                    <div class="perguntas">
+                        <strong>Reembolso?</strong>
+                        <p>Até 7 dias após a compra</p>
+                    </div>
+
+                    <div class="perguntas">
+                        <strong>Precisa de ajuda agora?</strong>
+                        <p>Envie um email para suporte rápido</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+     <footer>
+        <div class="grid3">
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/seguranca.png">
+                    <p class="rodape" >Compra Segura</p>
+                    <p class="rodape2" >Pagamento protegido com criptografia SSL</p>
+                </div>
+            </div>
+
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/download.png">
+                    <p class="rodape" >Download Instantâneo</p>
+                    <p class="rodape2" >Acesso imediato após a compra</p>
+                </div>
+            </div>
+
+            <div class="coluna3">
+                <div class="card3">
+                    <img class="icone" src="imgs/cartao.png">
+                    <p class="rodape" >Garantia de 7 Dias</p>
+                    <p class="rodape2" >Não gostou? Devolvemos o seu dinheiro</p>
+                </div>
+            </div>
+        </div>
+        <p class="rodape3" >Desenvolvido por Damires Sales</p>
+    </footer>
+
+    <script>
+        function mostrarmenu(){
+            document.querySelector("header nav").classList.toggle("mostrar")
+        }
+    </script>
+
+</body>
+</html>
